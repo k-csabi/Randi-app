@@ -1,4 +1,4 @@
-package com.univerity.randi_app;
+package com.university.randi_app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

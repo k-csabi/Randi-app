@@ -1,4 +1,4 @@
-package com.university.randiapp.config;
+package com.university.randi_app.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/", "/api/test").permitAll()   // publikus teszt végpontok
+                        .requestMatchers("/api/home", "/api/test").permitAll()   // publikus teszt végpontok
                         .anyRequest().authenticated()                    // a többi védett
                 )
                 .formLogin(form -> form.permitAll());              // alap login oldal (később cseréljük JWT-re)
